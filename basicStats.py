@@ -49,7 +49,7 @@ def z_score(numbers, mean_num, standard_deviation):
 
 def quartiles(numbers):
     numbers.sort()
-    Q1, Q2, Q3 = np.quantile(numbers, [0.25, 0.5, 0.75], axis=0)
+    Q1, Q2, Q3 = np.quantile(numbers, [0.25, 0.5, 0.75], axis=0, method='nearest')
     return {
         'Q1': Q1,
         'Q2': Q2,
