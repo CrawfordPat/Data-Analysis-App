@@ -12,6 +12,7 @@ The things you need before installing the software.
 
 * [Python 3.6+](https://www.python.org/downloads/)
 * requirements.txt
+* [venv help](https://realpython.com/python-virtual-environments-a-primer/)
 
 ### Setup
 
