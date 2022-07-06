@@ -83,9 +83,8 @@ def frequency_table(numbers):
             count[num] = 1
     return count
 
-# Test functions and return results in a dictionary
+
 def testFunctions():
-    # list of 11 random numbers between 0 and 100
     numbers = np.random.randint(0, 100, 11)
     numbers.sort()
     print(numbers)
