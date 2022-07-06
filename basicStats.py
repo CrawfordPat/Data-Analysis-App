@@ -85,10 +85,10 @@ def frequency_table(numbers):
 
 
 def testFunctions():
-    numbers = np.random.randint(0, 100, 11)
+    numbers = [1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 1000, -100]
     numbers.sort()
-    print(numbers)
     return {
+        'numbers': numbers,
         'count': count(numbers),
         'mean': mean(numbers),
         'median': median(numbers),
@@ -108,5 +108,11 @@ def testFunctions():
     }
 
 finalStats = testFunctions()
+# format finalStats to a text file, close the file
+# with open('finalStats.txt', 'w') as f:
+#     for key, value in finalStats.items():
+#         f.write(f"{key}: {value}\n")
+# f.close()
+
 for key, value in finalStats.items():
-    print(key, ":", value)
+    print(f"{key}: {value}")
