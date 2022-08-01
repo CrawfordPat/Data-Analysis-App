@@ -10,7 +10,8 @@ def count(numbers):
     return len(numbers)
 
 def mean(numbers):
-    return sum(numbers) / len(numbers)
+    mean = sum(numbers) / len(numbers)
+    return mean
 
 def median(numbers):
     numbers.sort()
@@ -107,12 +108,12 @@ def testFunctions():
         'frequency_table': frequency_table(numbers)
     }
 
-finalStats = testFunctions()
+# finalStats = testFunctions()
 # format finalStats to a text file, close the file
 # with open('finalStats.txt', 'w') as f:
 #     for key, value in finalStats.items():
 #         f.write(f"{key}: {value}\n")
 # f.close()
 
-for key, value in finalStats.items():
-    print(f"{key}: {value}")
+# for key, value in finalStats.items():
+#     print(f"{key}: {value}")
